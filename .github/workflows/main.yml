@@ -25,6 +25,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PASSWORD }}
           script: |
-            cd /home/dev/apptest
+            cd /home/dev/apptest-docker
             docker compose pull
             docker compose up -d 
