@@ -24,8 +24,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
           script: |
-            cd /home/dev/apptest-docker
+            cd /apptest-docker
             docker compose pull
             docker compose up -d 
